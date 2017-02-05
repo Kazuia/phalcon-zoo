@@ -15,7 +15,8 @@ try {
     $loader->registerDirs(
         array(
             '../app/controllers/',
-            '../app/models/'
+            '../app/models/',
+            '../app/forms/'
         )
     )->register();
 

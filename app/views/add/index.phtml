@@ -15,26 +15,24 @@
       <?php require (__DIR__ . '/../menu/index.phtml') ?>
     </div>
 
-		<div class="col-md-10">
+    <div class="col-md-10">
       <div class ="row>">
 				<div class="col-md-6">
-					<h2>Sign using this form</h2>
+					<h2>Add new specie !</h2>
 
-					<?php echo $this->tag->form('signup/register') ?>
-
-						<div class="form-group">
-							<label for="name">Name</label>
-							<?php echo $this->tag->textField(array("name", "class" => "form-control")) ?>
-						</div>
-
-						<div class="form-group">
-							<label for="name">E-Mail</label>
-							<?php echo $this->tag->textField(array("email", "class" => "form-control")) ?>
-						</div>
-
-							<?php echo $this->tag->submitButton(array("Register", "class" => "btn btn-submit")) ?>
-
-					</form>
+          <form method="post">
+            <p>
+              <label>Name</label>
+              <?php echo $addForm->render("name", ["class" => "form-control"]); ?>
+            </p>
+            <p>
+              <label>Species</label>
+              <?php echo $addForm->render("species",  ["class" => "form-control"]); ?>
+            </p>
+            <p>
+              <input type="submit" class="btn btn-success" value="Save" />
+            </p>
+          </form>
 				</div>
       </div>
     </div>

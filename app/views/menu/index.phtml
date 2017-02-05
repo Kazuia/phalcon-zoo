@@ -1,0 +1,12 @@
+<div class ="row menu-link">
+  <?php echo $this->tag->linkTo("add", "ADD SPECIES");?>
+</div>
+<div class ="row menu-link">
+<a href="#" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">CATEGORIES</a>
+  <div class="collapse" id="collapseExample">
+    <ul class="list-unstyled">
+      <li><?php echo $this->tag->linkTo(array("categories/birds", '<i class="fa fa-paw" aria-hidden="true"></i> BIRDS', "class" => "submenu"));?></li>
+      <li><?php echo $this->tag->linkTo(array("categories/felidaes", '<i class="fa fa-paw" aria-hidden="true"></i> FELIDAES', "class" => "submenu"));?></li>
+    </ul>
+  </div>
+</div>
