@@ -4,15 +4,24 @@
     <meta charset="utf-8" />
     <title>phalcon-zoo</title>
     <link rel="icon" type="image/png" href="img/falcon-icon.png" />
-    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <?php require (__DIR__ . '/../navbar/navbar.phtml') ?>
 
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-1 menu">
+      <?php require (__DIR__ . '/../menu/menu.phtml') ?>
+    </div>
+
+    <div class="col-md-10">
       <div class ="row>">
         <?php echo "<h1>Welcome to the phalcon-zoo !</h1>"; ?>
       </div>
     </div>
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
   </body>
 </html>
