@@ -1,0 +1,33 @@
+.navbar {
+  margin-bottom : 0px;
+  background-color: black;
+}
+
+.title-green {
+  color : #8fc800 !important;
+}
+
+.menu {
+  background-color: #f8f8f8;
+  border-right: solid 1px #8fc800;
+  font-family : Open Sans, Arial;
+  min-height: 100vh;
+}
+
+.menu a {
+  color: #096309;
+  font-family: Helvetica, Arial, Open Sans, sans-serif !important;
+}
+
+.menu-link {
+  padding: 10px 20px;
+  border-bottom: solid 1px #E5EDE5;
+}
+
+.submenu {
+  padding-left:20px;
+}
+
+.submenu a {
+  color: #2bba2b;
+}
